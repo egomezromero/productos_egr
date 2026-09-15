@@ -1,0 +1,535 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth"><head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGR Consultores Empresariales | Controla y Valida tu Negocio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&amp;display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                    colors: {
+                        brand: {
+                            50: '#ecfdf5',
+                            100: '#d1fae5',
+                            500: '#10b981',
+                            600: '#059669',
+                            700: '#047857',
+                            800: '#065f46',
+                            900: '#064e3b',
+                            dark: '#0b1320',
+                            card: '#111c2e'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0b1320;
+            color: #f3f4f6;
+        }
+        .gradient-text {
+            background: linear-gradient(135deg, #34d399 0%, #10b981 50%, #60a5fa 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gradient-border {
+            border-image: linear-gradient(to right, #10b981, #3b82f6) 1;
+        }
+        .glow-emerald {
+            box-shadow: 0 0 25px -5px rgba(16, 185, 129, 0.25);
+        }
+    </style>
+<style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.top-0{top:0px}.-top-3{top:-0.75rem}.right-6{right:1.5rem}.z-10{z-index:10}.z-50{z-index:50}.order-1{order:1}.order-2{order:2}.mx-auto{margin-left:auto;margin-right:auto}.mb-10{margin-bottom:2.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.mr-2{margin-right:0.5rem}.mt-1{margin-top:0.25rem}.mt-16{margin-top:4rem}.mt-4{margin-top:1rem}.mb-12{margin-bottom:3rem}.mb-14{margin-bottom:3.5rem}.mb-2{margin-bottom:0.5rem}.ml-2{margin-left:0.5rem}.mr-1{margin-right:0.25rem}.mt-10{margin-top:2.5rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-20{height:5rem}.h-12{height:3rem}.h-8{height:2rem}.w-10{width:2.5rem}.w-full{width:100%}.w-12{width:3rem}.w-8{width:2rem}.min-w-\[600px\]{min-width:600px}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-7xl{max-width:80rem}.max-w-2xl{max-width:42rem}.border-collapse{border-collapse:collapse}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.items-baseline{align-items:baseline}.items-stretch{align-items:stretch}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-6 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1.5rem * var(--tw-space-x-reverse));margin-left:calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-4 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(1rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(1rem * var(--tw-space-y-reverse))}.divide-y > :not([hidden]) ~ :not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px * var(--tw-divide-y-reverse))}.divide-slate-800 > :not([hidden]) ~ :not([hidden]){--tw-divide-opacity:1;border-color:rgb(30 41 59 / var(--tw-divide-opacity, 1))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.scroll-smooth{scroll-behavior:smooth}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.rounded-2xl{border-radius:1rem}.border{border-width:1px}.border-2{border-width:2px}.border-y{border-top-width:1px;border-bottom-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-emerald-500\/20{border-color:rgb(16 185 129 / 0.2)}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.border-amber-500\/20{border-color:rgb(245 158 11 / 0.2)}.border-blue-400\/50{border-color:rgb(96 165 250 / 0.5)}.border-blue-500\/20{border-color:rgb(59 130 246 / 0.2)}.border-emerald-400{--tw-border-opacity:1;border-color:rgb(52 211 153 / var(--tw-border-opacity, 1))}.border-emerald-400\/50{border-color:rgb(52 211 153 / 0.5)}.border-emerald-500{--tw-border-opacity:1;border-color:rgb(16 185 129 / var(--tw-border-opacity, 1))}.border-emerald-900\/30{border-color:rgb(6 78 59 / 0.3)}.border-red-900\/30{border-color:rgb(127 29 29 / 0.3)}.border-slate-800\/80{border-color:rgb(30 41 59 / 0.8)}.bg-\[\#0b1320\]{--tw-bg-opacity:1;background-color:rgb(11 19 32 / var(--tw-bg-opacity, 1))}.bg-\[\#0b1320\]\/90{background-color:rgb(11 19 32 / 0.9)}.bg-\[\#111c2e\]{--tw-bg-opacity:1;background-color:rgb(17 28 46 / var(--tw-bg-opacity, 1))}.bg-emerald-500\/10{background-color:rgb(16 185 129 / 0.1)}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-\[\#070c14\]{--tw-bg-opacity:1;background-color:rgb(7 12 20 / var(--tw-bg-opacity, 1))}.bg-amber-500\/10{background-color:rgb(245 158 11 / 0.1)}.bg-blue-500\/10{background-color:rgb(59 130 246 / 0.1)}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-emerald-400{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-emerald-500\/20{background-color:rgb(16 185 129 / 0.2)}.bg-emerald-950\/20{background-color:rgb(2 44 34 / 0.2)}.bg-red-500\/20{background-color:rgb(239 68 68 / 0.2)}.bg-red-950\/20{background-color:rgb(69 10 10 / 0.2)}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.bg-gradient-to-tr{background-image:linear-gradient(to top right, var(--tw-gradient-stops))}.from-\[\#0b1320\]{--tw-gradient-from:#0b1320 var(--tw-gradient-from-position);--tw-gradient-to:rgb(11 19 32 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-emerald-500{--tw-gradient-from:#10b981 var(--tw-gradient-from-position);--tw-gradient-to:rgb(16 185 129 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#112338\]{--tw-gradient-from:#112338 var(--tw-gradient-from-position);--tw-gradient-to:rgb(17 35 56 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-\[\#0f1a2e\]{--tw-gradient-to:rgb(15 26 46 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #0f1a2e var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-\[\#0b1320\]{--tw-gradient-to:#0b1320 var(--tw-gradient-to-position)}.to-blue-600{--tw-gradient-to:#2563eb var(--tw-gradient-to-position)}.p-2{padding:0.5rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.py-12{padding-top:3rem;padding-bottom:3rem}.pb-6{padding-bottom:1.5rem}.pt-10{padding-top:2.5rem}.pt-2{padding-top:0.5rem}.pb-8{padding-bottom:2rem}.text-left{text-align:left}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.text-5xl{font-size:3rem;line-height:1}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wider{letter-spacing:0.05em}.tracking-wide{letter-spacing:0.025em}.text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.text-red-400{--tw-text-opacity:1;color:rgb(248 113 113 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-950{--tw-text-opacity:1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-emerald-500\/20{--tw-shadow-color:rgb(16 185 129 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-emerald-600\/30{--tw-shadow-color:rgb(5 150 105 / 0.3);--tw-shadow:var(--tw-shadow-colored)}.shadow-blue-600\/20{--tw-shadow-color:rgb(37 99 235 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-emerald-400\/20{--tw-shadow-color:rgb(52 211 153 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-emerald-600\/20{--tw-shadow-color:rgb(5 150 105 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.outline-none{outline:2px solid transparent;outline-offset:2px}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.selection\:bg-emerald-500 *::selection{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:bg-emerald-500::selection{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:border-blue-500:hover{--tw-border-opacity:1;border-color:rgb(59 130 246 / var(--tw-border-opacity, 1))}.hover\:border-blue-500\/50:hover{border-color:rgb(59 130 246 / 0.5)}.hover\:border-emerald-500:hover{--tw-border-opacity:1;border-color:rgb(16 185 129 / var(--tw-border-opacity, 1))}.hover\:border-emerald-500\/50:hover{border-color:rgb(16 185 129 / 0.5)}.hover\:border-slate-700:hover{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.hover\:bg-emerald-500:hover{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.hover\:bg-blue-500:hover{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-300:hover{--tw-bg-opacity:1;background-color:rgb(110 231 183 / var(--tw-bg-opacity, 1))}.hover\:text-emerald-400:hover{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}@media (min-width: 640px){.sm\:flex{display:flex}.sm\:w-auto{width:auto}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 768px){.md\:mb-0{margin-bottom:0px}.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}}@media (min-width: 1024px){.lg\:order-1{order:1}.lg\:order-2{order:2}.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:mb-0{margin-bottom:0px}.lg\:mt-0{margin-top:0px}.lg\:grid{display:grid}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.lg\:gap-12{gap:3rem}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:py-28{padding-top:7rem;padding-bottom:7rem}.lg\:text-6xl{font-size:3.75rem;line-height:1}}</style><style>*, ::before, ::after{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }::backdrop{--tw-border-spacing-x:0;--tw-border-spacing-y:0;--tw-translate-x:0;--tw-translate-y:0;--tw-rotate:0;--tw-skew-x:0;--tw-skew-y:0;--tw-scale-x:1;--tw-scale-y:1;--tw-pan-x: ;--tw-pan-y: ;--tw-pinch-zoom: ;--tw-scroll-snap-strictness:proximity;--tw-gradient-from-position: ;--tw-gradient-via-position: ;--tw-gradient-to-position: ;--tw-ordinal: ;--tw-slashed-zero: ;--tw-numeric-figure: ;--tw-numeric-spacing: ;--tw-numeric-fraction: ;--tw-ring-inset: ;--tw-ring-offset-width:0px;--tw-ring-offset-color:#fff;--tw-ring-color:rgb(59 130 246 / 0.5);--tw-ring-offset-shadow:0 0 #0000;--tw-ring-shadow:0 0 #0000;--tw-shadow:0 0 #0000;--tw-shadow-colored:0 0 #0000;--tw-blur: ;--tw-brightness: ;--tw-contrast: ;--tw-grayscale: ;--tw-hue-rotate: ;--tw-invert: ;--tw-saturate: ;--tw-sepia: ;--tw-drop-shadow: ;--tw-backdrop-blur: ;--tw-backdrop-brightness: ;--tw-backdrop-contrast: ;--tw-backdrop-grayscale: ;--tw-backdrop-hue-rotate: ;--tw-backdrop-invert: ;--tw-backdrop-opacity: ;--tw-backdrop-saturate: ;--tw-backdrop-sepia: ;--tw-contain-size: ;--tw-contain-layout: ;--tw-contain-paint: ;--tw-contain-style: }/* ! tailwindcss v3.4.17 | MIT License | https://tailwindcss.com */*,::after,::before{box-sizing:border-box;border-width:0;border-style:solid;border-color:#e5e7eb}::after,::before{--tw-content:''}:host,html{line-height:1.5;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;font-family:Inter, sans-serif;font-feature-settings:normal;font-variation-settings:normal;-webkit-tap-highlight-color:transparent}body{margin:0;line-height:inherit}hr{height:0;color:inherit;border-top-width:1px}abbr:where([title]){-webkit-text-decoration:underline dotted;text-decoration:underline dotted}h1,h2,h3,h4,h5,h6{font-size:inherit;font-weight:inherit}a{color:inherit;text-decoration:inherit}b,strong{font-weight:bolder}code,kbd,pre,samp{font-family:ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;font-feature-settings:normal;font-variation-settings:normal;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}table{text-indent:0;border-color:inherit;border-collapse:collapse}button,input,optgroup,select,textarea{font-family:inherit;font-feature-settings:inherit;font-variation-settings:inherit;font-size:100%;font-weight:inherit;line-height:inherit;letter-spacing:inherit;color:inherit;margin:0;padding:0}button,select{text-transform:none}button,input:where([type=button]),input:where([type=reset]),input:where([type=submit]){-webkit-appearance:button;background-color:transparent;background-image:none}:-moz-focusring{outline:auto}:-moz-ui-invalid{box-shadow:none}progress{vertical-align:baseline}::-webkit-inner-spin-button,::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}blockquote,dd,dl,figure,h1,h2,h3,h4,h5,h6,hr,p,pre{margin:0}fieldset{margin:0;padding:0}legend{padding:0}menu,ol,ul{list-style:none;margin:0;padding:0}dialog{padding:0}textarea{resize:vertical}input::placeholder,textarea::placeholder{opacity:1;color:#9ca3af}[role=button],button{cursor:pointer}:disabled{cursor:default}audio,canvas,embed,iframe,img,object,svg,video{display:block;vertical-align:middle}img,video{max-width:100%;height:auto}[hidden]:where(:not([hidden=until-found])){display:none}.absolute{position:absolute}.relative{position:relative}.sticky{position:sticky}.-top-3{top:-0.75rem}.right-6{right:1.5rem}.top-0{top:0px}.z-10{z-index:10}.z-50{z-index:50}.order-1{order:1}.order-2{order:2}.mx-auto{margin-left:auto;margin-right:auto}.mb-10{margin-bottom:2.5rem}.mb-12{margin-bottom:3rem}.mb-2{margin-bottom:0.5rem}.mb-3{margin-bottom:0.75rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}.ml-2{margin-left:0.5rem}.mr-1{margin-right:0.25rem}.mr-2{margin-right:0.5rem}.mt-1{margin-top:0.25rem}.mt-10{margin-top:2.5rem}.mt-16{margin-top:4rem}.mt-4{margin-top:1rem}.block{display:block}.inline-block{display:inline-block}.flex{display:flex}.inline-flex{display:inline-flex}.grid{display:grid}.hidden{display:none}.h-10{height:2.5rem}.h-12{height:3rem}.h-20{height:5rem}.h-8{height:2rem}.w-10{width:2.5rem}.w-12{width:3rem}.w-8{width:2rem}.w-full{width:100%}.min-w-\[600px\]{min-width:600px}.max-w-3xl{max-width:48rem}.max-w-4xl{max-width:56rem}.max-w-7xl{max-width:80rem}.border-collapse{border-collapse:collapse}.grid-cols-1{grid-template-columns:repeat(1, minmax(0, 1fr))}.grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.flex-col{flex-direction:column}.items-start{align-items:flex-start}.items-center{align-items:center}.items-baseline{align-items:baseline}.items-stretch{align-items:stretch}.justify-center{justify-content:center}.justify-between{justify-content:space-between}.gap-4{gap:1rem}.gap-6{gap:1.5rem}.gap-8{gap:2rem}.space-x-3 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(0.75rem * var(--tw-space-x-reverse));margin-left:calc(0.75rem * calc(1 - var(--tw-space-x-reverse)))}.space-x-6 > :not([hidden]) ~ :not([hidden]){--tw-space-x-reverse:0;margin-right:calc(1.5rem * var(--tw-space-x-reverse));margin-left:calc(1.5rem * calc(1 - var(--tw-space-x-reverse)))}.space-y-2 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.5rem * var(--tw-space-y-reverse))}.space-y-3 > :not([hidden]) ~ :not([hidden]){--tw-space-y-reverse:0;margin-top:calc(0.75rem * calc(1 - var(--tw-space-y-reverse)));margin-bottom:calc(0.75rem * var(--tw-space-y-reverse))}.divide-y > :not([hidden]) ~ :not([hidden]){--tw-divide-y-reverse:0;border-top-width:calc(1px * calc(1 - var(--tw-divide-y-reverse)));border-bottom-width:calc(1px * var(--tw-divide-y-reverse))}.divide-slate-800 > :not([hidden]) ~ :not([hidden]){--tw-divide-opacity:1;border-color:rgb(30 41 59 / var(--tw-divide-opacity, 1))}.overflow-hidden{overflow:hidden}.overflow-x-auto{overflow-x:auto}.scroll-smooth{scroll-behavior:smooth}.rounded-2xl{border-radius:1rem}.rounded-full{border-radius:9999px}.rounded-lg{border-radius:0.5rem}.rounded-xl{border-radius:0.75rem}.border{border-width:1px}.border-2{border-width:2px}.border-y{border-top-width:1px;border-bottom-width:1px}.border-b{border-bottom-width:1px}.border-t{border-top-width:1px}.border-dashed{border-style:dashed}.border-blue-400\/50{border-color:rgb(96 165 250 / 0.5)}.border-blue-500\/20{border-color:rgb(59 130 246 / 0.2)}.border-emerald-400{--tw-border-opacity:1;border-color:rgb(52 211 153 / var(--tw-border-opacity, 1))}.border-emerald-400\/50{border-color:rgb(52 211 153 / 0.5)}.border-emerald-500{--tw-border-opacity:1;border-color:rgb(16 185 129 / var(--tw-border-opacity, 1))}.border-emerald-500\/20{border-color:rgb(16 185 129 / 0.2)}.border-slate-700{--tw-border-opacity:1;border-color:rgb(51 65 85 / var(--tw-border-opacity, 1))}.border-slate-800{--tw-border-opacity:1;border-color:rgb(30 41 59 / var(--tw-border-opacity, 1))}.border-slate-800\/80{border-color:rgb(30 41 59 / 0.8)}.bg-\[\#0b1320\]{--tw-bg-opacity:1;background-color:rgb(11 19 32 / var(--tw-bg-opacity, 1))}.bg-\[\#070c14\]{--tw-bg-opacity:1;background-color:rgb(7 12 20 / var(--tw-bg-opacity, 1))}.bg-\[\#0b1320\]\/90{background-color:rgb(11 19 32 / 0.9)}.bg-\[\#111c2e\]{--tw-bg-opacity:1;background-color:rgb(17 28 46 / var(--tw-bg-opacity, 1))}.bg-blue-500\/10{background-color:rgb(59 130 246 / 0.1)}.bg-blue-600{--tw-bg-opacity:1;background-color:rgb(37 99 235 / var(--tw-bg-opacity, 1))}.bg-emerald-400{--tw-bg-opacity:1;background-color:rgb(52 211 153 / var(--tw-bg-opacity, 1))}.bg-emerald-500{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.bg-emerald-500\/10{background-color:rgb(16 185 129 / 0.1)}.bg-emerald-600{--tw-bg-opacity:1;background-color:rgb(5 150 105 / var(--tw-bg-opacity, 1))}.bg-slate-800{--tw-bg-opacity:1;background-color:rgb(30 41 59 / var(--tw-bg-opacity, 1))}.bg-gradient-to-b{background-image:linear-gradient(to bottom, var(--tw-gradient-stops))}.bg-gradient-to-tr{background-image:linear-gradient(to top right, var(--tw-gradient-stops))}.from-\[\#0b1320\]{--tw-gradient-from:#0b1320 var(--tw-gradient-from-position);--tw-gradient-to:rgb(11 19 32 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-\[\#112338\]{--tw-gradient-from:#112338 var(--tw-gradient-from-position);--tw-gradient-to:rgb(17 35 56 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.from-emerald-500{--tw-gradient-from:#10b981 var(--tw-gradient-from-position);--tw-gradient-to:rgb(16 185 129 / 0) var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), var(--tw-gradient-to)}.via-\[\#0f1a2e\]{--tw-gradient-to:rgb(15 26 46 / 0)  var(--tw-gradient-to-position);--tw-gradient-stops:var(--tw-gradient-from), #0f1a2e var(--tw-gradient-via-position), var(--tw-gradient-to)}.to-\[\#0b1320\]{--tw-gradient-to:#0b1320 var(--tw-gradient-to-position)}.to-blue-600{--tw-gradient-to:#2563eb var(--tw-gradient-to-position)}.p-2{padding:0.5rem}.p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}.px-1{padding-left:0.25rem;padding-right:0.25rem}.px-3{padding-left:0.75rem;padding-right:0.75rem}.px-4{padding-left:1rem;padding-right:1rem}.px-6{padding-left:1.5rem;padding-right:1.5rem}.px-8{padding-left:2rem;padding-right:2rem}.py-1{padding-top:0.25rem;padding-bottom:0.25rem}.py-1\.5{padding-top:0.375rem;padding-bottom:0.375rem}.py-12{padding-top:3rem;padding-bottom:3rem}.py-2{padding-top:0.5rem;padding-bottom:0.5rem}.py-2\.5{padding-top:0.625rem;padding-bottom:0.625rem}.py-20{padding-top:5rem;padding-bottom:5rem}.py-3{padding-top:0.75rem;padding-bottom:0.75rem}.py-4{padding-top:1rem;padding-bottom:1rem}.pb-6{padding-bottom:1.5rem}.pb-8{padding-bottom:2rem}.pt-10{padding-top:2.5rem}.pt-2{padding-top:0.5rem}.text-left{text-align:left}.text-center{text-align:center}.text-2xl{font-size:1.5rem;line-height:2rem}.text-3xl{font-size:1.875rem;line-height:2.25rem}.text-4xl{font-size:2.25rem;line-height:2.5rem}.text-5xl{font-size:3rem;line-height:1}.text-base{font-size:1rem;line-height:1.5rem}.text-lg{font-size:1.125rem;line-height:1.75rem}.text-sm{font-size:0.875rem;line-height:1.25rem}.text-xl{font-size:1.25rem;line-height:1.75rem}.text-xs{font-size:0.75rem;line-height:1rem}.font-bold{font-weight:700}.font-extrabold{font-weight:800}.font-medium{font-weight:500}.font-semibold{font-weight:600}.uppercase{text-transform:uppercase}.leading-none{line-height:1}.leading-relaxed{line-height:1.625}.leading-tight{line-height:1.25}.tracking-tight{letter-spacing:-0.025em}.tracking-wide{letter-spacing:0.025em}.tracking-wider{letter-spacing:0.05em}.text-slate-200{--tw-text-opacity:1;color:rgb(226 232 240 / var(--tw-text-opacity, 1))}.text-amber-400{--tw-text-opacity:1;color:rgb(251 191 36 / var(--tw-text-opacity, 1))}.text-blue-400{--tw-text-opacity:1;color:rgb(96 165 250 / var(--tw-text-opacity, 1))}.text-emerald-400{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.text-slate-300{--tw-text-opacity:1;color:rgb(203 213 225 / var(--tw-text-opacity, 1))}.text-slate-400{--tw-text-opacity:1;color:rgb(148 163 184 / var(--tw-text-opacity, 1))}.text-slate-500{--tw-text-opacity:1;color:rgb(100 116 139 / var(--tw-text-opacity, 1))}.text-slate-600{--tw-text-opacity:1;color:rgb(71 85 105 / var(--tw-text-opacity, 1))}.text-slate-950{--tw-text-opacity:1;color:rgb(2 6 23 / var(--tw-text-opacity, 1))}.text-white{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.antialiased{-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}.shadow-2xl{--tw-shadow:0 25px 50px -12px rgb(0 0 0 / 0.25);--tw-shadow-colored:0 25px 50px -12px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-lg{--tw-shadow:0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-xl{--tw-shadow:0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);--tw-shadow-colored:0 20px 25px -5px var(--tw-shadow-color), 0 8px 10px -6px var(--tw-shadow-color);box-shadow:var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow)}.shadow-blue-600\/20{--tw-shadow-color:rgb(37 99 235 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-emerald-400\/20{--tw-shadow-color:rgb(52 211 153 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-emerald-500\/20{--tw-shadow-color:rgb(16 185 129 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-emerald-600\/20{--tw-shadow-color:rgb(5 150 105 / 0.2);--tw-shadow:var(--tw-shadow-colored)}.shadow-emerald-600\/30{--tw-shadow-color:rgb(5 150 105 / 0.3);--tw-shadow:var(--tw-shadow-colored)}.outline-none{outline:2px solid transparent;outline-offset:2px}.backdrop-blur-md{--tw-backdrop-blur:blur(12px);-webkit-backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);backdrop-filter:var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia)}.transition-all{transition-property:all;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.transition-colors{transition-property:color, background-color, border-color, fill, stroke, -webkit-text-decoration-color;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke;transition-property:color, background-color, border-color, text-decoration-color, fill, stroke, -webkit-text-decoration-color;transition-timing-function:cubic-bezier(0.4, 0, 0.2, 1);transition-duration:150ms}.selection\:bg-emerald-500 *::selection{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.selection\:text-white *::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.selection\:bg-emerald-500::selection{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.selection\:text-white::selection{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}.hover\:border-blue-500:hover{--tw-border-opacity:1;border-color:rgb(59 130 246 / var(--tw-border-opacity, 1))}.hover\:border-blue-500\/50:hover{border-color:rgb(59 130 246 / 0.5)}.hover\:border-emerald-500:hover{--tw-border-opacity:1;border-color:rgb(16 185 129 / var(--tw-border-opacity, 1))}.hover\:border-emerald-500\/50:hover{border-color:rgb(16 185 129 / 0.5)}.hover\:bg-blue-500:hover{--tw-bg-opacity:1;background-color:rgb(59 130 246 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-300:hover{--tw-bg-opacity:1;background-color:rgb(110 231 183 / var(--tw-bg-opacity, 1))}.hover\:bg-emerald-500:hover{--tw-bg-opacity:1;background-color:rgb(16 185 129 / var(--tw-bg-opacity, 1))}.hover\:bg-slate-700:hover{--tw-bg-opacity:1;background-color:rgb(51 65 85 / var(--tw-bg-opacity, 1))}.hover\:text-emerald-400:hover{--tw-text-opacity:1;color:rgb(52 211 153 / var(--tw-text-opacity, 1))}.hover\:text-white:hover{--tw-text-opacity:1;color:rgb(255 255 255 / var(--tw-text-opacity, 1))}@media (min-width: 640px){.sm\:flex{display:flex}.sm\:w-auto{width:auto}.sm\:grid-cols-2{grid-template-columns:repeat(2, minmax(0, 1fr))}.sm\:flex-row{flex-direction:row}.sm\:px-6{padding-left:1.5rem;padding-right:1.5rem}.sm\:text-4xl{font-size:2.25rem;line-height:2.5rem}.sm\:text-5xl{font-size:3rem;line-height:1}.sm\:text-xl{font-size:1.25rem;line-height:1.75rem}}@media (min-width: 768px){.md\:mb-0{margin-bottom:0px}.md\:flex{display:flex}.md\:hidden{display:none}.md\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.md\:grid-cols-4{grid-template-columns:repeat(4, minmax(0, 1fr))}.md\:flex-row{flex-direction:row}}@media (min-width: 1024px){.lg\:order-1{order:1}.lg\:order-2{order:2}.lg\:col-span-5{grid-column:span 5 / span 5}.lg\:col-span-7{grid-column:span 7 / span 7}.lg\:mb-0{margin-bottom:0px}.lg\:mt-0{margin-top:0px}.lg\:grid{display:grid}.lg\:grid-cols-12{grid-template-columns:repeat(12, minmax(0, 1fr))}.lg\:grid-cols-3{grid-template-columns:repeat(3, minmax(0, 1fr))}.lg\:gap-12{gap:3rem}.lg\:px-8{padding-left:2rem;padding-right:2rem}.lg\:py-28{padding-top:7rem;padding-bottom:7rem}.lg\:text-6xl{font-size:3.75rem;line-height:1}}</style></head>
+<body class="bg-[#0b1320] text-slate-200 antialiased selection:bg-emerald-500 selection:text-white">
+
+    <!-- Header / Navigation Bar -->
+    <header class="sticky top-0 z-50 bg-[#0b1320]/90 backdrop-blur-md border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                <!-- Brand Logo -->
+                <div class="flex items-center space-x-3">
+                    <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-emerald-500 to-blue-600 flex items-center justify-center font-bold text-white text-xl shadow-lg shadow-emerald-500/20">
+                        EGR
+                    </div>
+                    <div>
+                        <span class="text-lg font-extrabold tracking-tight text-white block leading-none">EGR CONSULTORES</span>
+                        <span class="text-xs text-emerald-400 font-medium tracking-wider">EMPRESARIALES</span>
+                    </div>
+                </div>
+
+                <!-- Desktop Navigation Links -->
+                <nav class="hidden md:flex space-x-6 text-sm font-medium text-slate-300">
+                    <a href="#controla" class="hover:text-emerald-400 transition-colors">Controla tu Negocio</a>
+                    <a href="#valida" class="hover:text-emerald-400 transition-colors">Valida tu Negocio</a>
+                    <a href="#comparativa" class="hover:text-emerald-400 transition-colors">Tabla Comparativa</a>
+                    <a href="#precios" class="hover:text-emerald-400 transition-colors">Planes y Precios</a>
+                </nav>
+
+                <!-- WhatsApp Direct CTA -->
+                <div class="hidden sm:flex items-center">
+                    <a href="https://wa.me/51913502048?text=Hola%20EGR%20Consultores,%20deseo%20m%C3%A1s%20informaci%C3%B3n%20sobre%20sus%20herramientas%20empresariales." target="_blank" rel="noopener noreferrer" class="inline-flex items-center justify-center px-4 py-2.5 rounded-xl text-xs font-bold uppercase tracking-wider text-white bg-emerald-600 hover:bg-emerald-500 transition-all shadow-lg shadow-emerald-600/30">
+                        <i class="fa-brands fa-whatsapp text-lg mr-2"></i> WhatsApp Directo
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-btn" class="text-slate-300 hover:text-white p-2">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile dropdown menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#111c2e] border-b border-slate-800 px-4 pt-2 pb-6 space-y-3">
+            <a href="#controla" class="block text-slate-300 hover:text-emerald-400 py-2">⚡ Controla tu Negocio</a>
+            <a href="#valida" class="block text-slate-300 hover:text-emerald-400 py-2">🎯 Valida tu Negocio</a>
+            <a href="#audiencia" class="block text-slate-300 hover:text-emerald-400 py-2">👥 ¿A quién sirve?</a>
+            <a href="#comparativa" class="block text-slate-300 hover:text-emerald-400 py-2">📊 Comparativa</a>
+            <a href="#precios" class="block text-slate-300 hover:text-emerald-400 py-2">💎 Planes y Precios</a>
+            <a href="https://wa.me/51913502048?text=Hola%20EGR%20Consultores,%20deseo%20m%C3%A1s%20informaci%C3%B3n." target="_blank" class="w-full mt-4 inline-flex items-center justify-center px-4 py-3 rounded-xl text-sm font-bold text-white bg-emerald-600">
+                <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Contactar por WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero / Proposal Value Section -->
+    <section class="relative overflow-hidden py-20 lg:py-28 bg-gradient-to-b from-[#0b1320] via-[#0f1a2e] to-[#0b1320]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto">
+                <span class="inline-flex items-center px-4 py-1.5 rounded-full text-xs font-semibold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-6">
+                    🚀 Suite Empresarial Todo-en-Uno
+                </span>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-tight mb-6">
+                    Valida Antes de Invertir.<span class="gradient-text"> Controla Después de Emprender.</span>
+                </h1>
+                <p class="text-lg sm:text-xl text-slate-300 leading-relaxed mb-8">
+                    Simplifica tus decisiones estratégicas con las herramientas definitivas de EGR Consultores Empresariales. Valida nuevas ideas y toma el control financiero de tu empresa en tiempo real.
+                </p>
+                <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                    <a href="https://wa.me/51913502048?text=Hola%20EGR,%20quiero%20solicitar%20una%20demostraci%C3%B3n%20de%20sus%20herramientas." target="_blank" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-white bg-emerald-600 hover:bg-emerald-500 transition-all shadow-xl shadow-emerald-600/30 flex items-center justify-center text-base">
+                        <i class="fa-brands fa-whatsapp text-xl mr-2"></i> Solicitar Demostración Directa
+                    </a>
+                    <a href="#precios" class="w-full sm:w-auto px-8 py-4 rounded-xl font-bold text-slate-200 bg-slate-800 hover:bg-slate-700 transition-all border border-slate-700 flex items-center justify-center text-base">
+                        <i class="fa-solid fa-tags mr-2"></i> Ver Planes y Ofertas
+                    </a>
+                </div>
+            </div>
+
+            <!-- Key Metric Highlights -->
+            <div class="mt-16 grid grid-cols-2 md:grid-cols-4 gap-6 max-w-4xl mx-auto border-t border-slate-800 pt-10">
+                <div class="text-center">
+                    <p class="text-3xl font-extrabold text-emerald-400">📊 100%</p>
+                    <p class="text-xs text-slate-400 mt-1">Control de Inventarios y Caja</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-3xl font-extrabold text-emerald-400">🤖 20+</p>
+                    <p class="text-xs text-slate-400 mt-1">Prompts de IA Especializados</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-3xl font-extrabold text-blue-400">⚡ Instant</p>
+                    <p class="text-xs text-slate-400 mt-1">Simulador Punto de Equilibrio</p>
+                </div>
+                <div class="text-center">
+                    <p class="text-3xl font-extrabold text-blue-400">🛡️ 0%</p>
+                    <p class="text-xs text-slate-400 mt-1">Riesgo a Pérdidas a Ciegas</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Controla tu Negocio (Mi Negocio) -->
+    <section id="controla" class="py-20 bg-[#111c2e] border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-12 items-center">
+                <div class="lg:col-span-5 mb-10 lg:mb-0">
+                    <span class="inline-block px-3 py-1 rounded-lg text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-3">
+                        🟢 OPERACIÓN Y FINANZAS
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+                        Controla tu Negocio <span class="text-emerald-400"></span>
+                    </h2>
+                    <p class="text-slate-300 mb-6">
+                        Olvídate del desorden operativo y las cuentas confusas. Registra tus ventas, controla tus stock sin pérdidas y visualiza la salud financiera de tu negocio en un solo panel de control estructurado.
+                    </p>
+                    <ul class="space-y-3 mb-8 text-slate-300">
+                        <li class="flex items-start">
+                            <span class="text-emerald-400 font-bold mr-2">•</span>
+                            <span><strong>Dashboards Operativos:</strong> Gráficos e indicadores claros para tomar decisiones al instante.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-emerald-400 font-bold mr-2">•</span>
+                            <span><strong>Control de Inventarios:</strong> Alertas de stock bajo, rotación de productos y costo de ventas.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-emerald-400 font-bold mr-2">•</span>
+                            <span><strong>Flujo de Caja diario y mensual:</strong> Control preciso de ingresos, egresos y margen real.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-emerald-400 font-bold mr-2">•</span>
+                            <span><strong>Tracking de Ventas:</strong> Seguimiento detallado por vendedor, producto o servicio.</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/51913502048?text=Hola%20EGR,%20quiero%20conocer%20m%C3%A1s%20detalles%20de%20%27Controla%20tu%20Negocio%27." target="_blank" class="inline-flex items-center px-6 py-3 rounded-xl font-semibold text-white bg-emerald-600 hover:bg-emerald-500 transition-all shadow-lg shadow-emerald-600/20">
+                        <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Probar Controla tu Negocio
+                    </a>
+                </div>
+
+                <!-- Feature Grid Box -->
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="p-6 bg-[#0b1320] rounded-2xl border border-slate-800 hover:border-emerald-500/50 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-xl font-bold mb-4">📊</div>
+                        <h3 class="text-lg font-bold text-white mb-2">Panel Financiero</h3>
+                        <p class="text-xs text-slate-400">Monitorea ganancias netas, costos fijos y variables sin fórmulas complicadas.</p>
+                    </div>
+                    <div class="p-6 bg-[#0b1320] rounded-2xl border border-slate-800 hover:border-emerald-500/50 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-xl font-bold mb-4">🔍</div>
+                        <h3 class="text-lg font-bold text-white mb-2">Aplicable +20 negocios</h3>
+                        <p class="text-xs text-slate-400">Úsalo en tu bodega, gimnasio, veterinaria, tienda comercial y más.</p>
+                    </div>
+                    <div class="p-6 bg-[#0b1320] rounded-2xl border border-slate-800 hover:border-emerald-500/50 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-xl font-bold mb-4">💳</div>
+                        <h3 class="text-lg font-bold text-white mb-2">Registro de ingresos y gastos</h3>
+                        <p class="text-xs text-slate-400">Controla las ventas diarias de tu negocio y registro los gastos.</p>
+                    </div>
+                    <div class="p-6 bg-[#0b1320] rounded-2xl border border-slate-800 hover:border-emerald-500/50 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 text-xl font-bold mb-4">🎯</div>
+                        <h3 class="text-lg font-bold text-white mb-2">Metas Comerciales</h3>
+                        <p class="text-xs text-slate-400">Proyecta tus metas mensuales y mide el avance diario del equipo.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section: Valida tu Negocio -->
+    <section id="valida" class="py-20 bg-[#0b1320]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="lg:grid lg:grid-cols-12 lg:gap-12 items-center">
+                <!-- Feature Grid Box First on desktop -->
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4 order-2 lg:order-1 mt-10 lg:mt-0">
+                    <div class="p-6 bg-[#111c2e] rounded-2xl border border-slate-800 hover:border-blue-500/50 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 text-xl font-bold mb-4">🎯</div>
+                        <h3 class="text-lg font-bold text-white mb-2">Simulador de Equilibrio</h3>
+                        <p class="text-xs text-slate-400">Calcula cuántas unidades necesitas vender para no perder dinero.</p>
+                    </div>
+                    <div class="p-6 bg-[#111c2e] rounded-2xl border border-slate-800 hover:border-blue-500/50 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 text-xl font-bold mb-4">🤖</div>
+                        <h3 class="text-lg font-bold text-white mb-2">AI Prompt Center (20+)</h3>
+                        <p class="text-xs text-slate-400">Prompts probados para estudios de mercado y buyer personas con IA.</p>
+                    </div>
+                    <div class="p-6 bg-[#111c2e] rounded-2xl border border-slate-800 hover:border-blue-500/50 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 text-xl font-bold mb-4">🛡️</div>
+                        <h3 class="text-lg font-bold text-white mb-2">Matriz de Riesgos</h3>
+                        <p class="text-xs text-slate-400">Identifica cuellos de botella antes de arriesgar tu capital inicial.</p>
+                    </div>
+                    <div class="p-6 bg-[#111c2e] rounded-2xl border border-slate-800 hover:border-blue-500/50 transition-all">
+                        <div class="w-12 h-12 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400 text-xl font-bold mb-4">⭐</div>
+                        <h3 class="text-lg font-bold text-white mb-2">Scoring de Viabilidad</h3>
+                        <p class="text-xs text-slate-400">Puntaje objetivo que te indica si el proyecto debe lanzarse o ajustarse.</p>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 order-1 lg:order-2">
+                    <span class="inline-block px-3 py-1 rounded-lg text-xs font-bold bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-3">
+                        🔵 ESTRATEGIA Y VALIDACIÓN
+                    </span>
+                    <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+                        Valida tu Negocio
+                    </h2>
+                    <p class="text-slate-300 mb-6">
+                        No inviertas a ciegas. Valida tu modelo comercial, dimensiona el presupuesto de inversión inicial y proyecta el retorno financiero antes de arriesgar tus ahorros.
+                    </p>
+                    <ul class="space-y-3 mb-8 text-slate-300">
+                        <li class="flex items-start">
+                            <span class="text-blue-400 font-bold mr-2">•</span>
+                            <span><strong>Investigación de Mercado Agil:</strong> Metodología de validación rápida.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-400 font-bold mr-2">•</span>
+                            <span><strong>Presupuesto de Inversión Inicial:</strong> Proyecta tus costos, presupuesto e inversión inicial.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-400 font-bold mr-2">•</span>
+                            <span><strong>Biblioteca de Prompts IA:</strong> Más de 20 prompts listos para ChatGPT y Claude.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <span class="text-blue-400 font-bold mr-2">•</span>
+                            <span><strong>Scorecard de Viabilidad:</strong> Calificación objetiva pre-lanzamiento.</span>
+                        </li>
+                    </ul>
+                    <a href="https://wa.me/51913502048?text=Hola%20EGR,%20quiero%20conocer%20m%C3%A1s%20sobre%20%27Valida%20tu%20Negocio%27." target="_blank" class="inline-flex items-center px-6 py-3 rounded-xl font-semibold text-white bg-blue-600 hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/20">
+                        <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Validar Mi Idea Ahora
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Product Suite Comparison Table -->
+    <section id="comparativa" class="py-20 bg-[#111c2e] border-y border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="inline-block px-3 py-1 rounded-lg text-xs font-bold bg-blue-500/10 text-blue-400 border border-blue-500/20 mb-3">
+                    📊 TABLA COMPARATIVA
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+                    Compara los Módulos Disponibles
+                </h2>
+                <p class="text-slate-400">
+                    Selecciona la herramienta que mejor se adapte a tu etapa actual.
+                </p>
+            </div>
+
+            <div class="overflow-x-auto">
+                <table class="w-full text-left border-collapse min-w-[600px]">
+                    <thead>
+                        <tr class="border-b border-slate-800 text-slate-300 bg-[#0b1320]">
+                            <th class="p-4 font-bold">Características y Funciones</th>
+                            <th class="p-4 font-bold text-emerald-400 text-center">Controla tu Negocio</th>
+                            <th class="p-4 font-bold text-blue-400 text-center">Valida tu Negocio</th>
+                            <th class="p-4 font-bold text-amber-400 text-center">Pack DUO (Combo)</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-slate-800 text-sm text-slate-300">
+                        <tr>
+                            <td class="p-4 flex items-center"><span class="mr-2"></span> Control de Stock e Inventarios</td>
+                            <td class="p-4 text-center text-emerald-400 font-bold">✓</td>
+                            <td class="p-4 text-center text-slate-600 font-bold">-</td>
+                            <td class="p-4 text-center text-amber-400 font-bold">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4"><span class="mr-2"></span> Flujo de Caja y Tracking de Ventas</td>
+                            <td class="p-4 text-center text-emerald-400 font-bold">✓</td>
+                            <td class="p-4 text-center text-slate-600 font-bold">-</td>
+                            <td class="p-4 text-center text-amber-400 font-bold">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4"><span class="mr-2"></span> Simulador de Punto de Equilibrio</td>
+                            <td class="p-4 text-center text-slate-600 font-bold">-</td>
+                            <td class="p-4 text-center text-blue-400 font-bold">✓</td>
+                            <td class="p-4 text-center text-amber-400 font-bold">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4"><span class="mr-2"></span> AI Prompt Center (+50 Prompts)</td>
+                            <td class="p-4 text-center text-emerald-400 font-bold">✓</td>
+                            <td class="p-4 text-center text-slate-600 font-bold">-</td>
+                            <td class="p-4 text-center text-amber-400 font-bold">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4"><span class="mr-2"></span> AI Prompt Center (+20 Prompts)</td>
+                            <td class="p-4 text-center text-slate-600 font-bold">-</td>
+                            <td class="p-4 text-center text-blue-400 font-bold">✓</td>
+                            <td class="p-4 text-center text-amber-400 font-bold">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4"><span class="mr-2"></span> Matriz de Riesgos y Scorecard</td>
+                            <td class="p-4 text-center text-slate-600 font-bold">-</td>
+                            <td class="p-4 text-center text-blue-400 font-bold">✓</td>
+                            <td class="p-4 text-center text-amber-400 font-bold">✓</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4"><span class="mr-2"></span> Soporte Directo y Guías en Video</td>
+                            <td class="p-4 text-center text-emerald-400 font-bold">✓</td>
+                            <td class="p-4 text-center text-blue-400 font-bold">✓</td>
+                            <td class="p-4 text-center text-amber-400 font-bold">VIP Prioritario</td>
+                        </tr>
+                        <tr>
+                            <td class="p-4"><span class="mr-2"></span> Descuentos exclusivos en productos</td>
+                            <td class="p-4 text-center text-slate-600 font-bold">-</td>
+                            <td class="p-4 text-center text-slate-600 font-bold">-</td>
+                            <td class="p-4 text-center text-amber-400 font-bold">VIP Prioritario</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- What's Included Section -->
+    <section class="py-20 bg-[#0b1320]">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="inline-block px-3 py-1 rounded-lg text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-3">
+                    🎁 ENTREGABLES COMPLETOS
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+                    ¿Qué incluye exactamente tu compra?
+                </h2>
+                <p class="text-slate-400">
+                    Obtén acceso inmediato y de por vida a los siguientes recursos.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="p-6 bg-[#111c2e] rounded-2xl border border-slate-800">
+                    <div class="text-3xl mb-4">📂</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Plantillas y Web Apps</h3>
+                    <p class="text-xs text-slate-400">Archivos interactivos completamente automatizados en Google Sheets / Excel e interfaces Web interactiva.</p>
+                </div>
+                <div class="p-6 bg-[#111c2e] rounded-2xl border border-slate-800">
+                    <div class="text-3xl mb-4">📖</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Manuales y Guías Paso a Paso</h3>
+                    <p class="text-xs text-slate-400">Documentación detallada y tutoriales en video para implementar las herramientas desde el primer día.</p>
+                </div>
+                <div class="p-6 bg-[#111c2e] rounded-2xl border border-slate-800">
+                    <div class="text-3xl mb-4">💬</div>
+                    <h3 class="text-lg font-bold text-white mb-2">Asesoría Directa por WhatsApp</h3>
+                    <p class="text-xs text-slate-400">Soporte y resolución de dudas personalizadas directamente por el equipo de EGR Consultores.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pricing Section (Editable Pricing) -->
+    <section id="precios" class="py-20 bg-[#111c2e] border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="inline-block px-3 py-1 rounded-lg text-xs font-bold bg-emerald-500/10 text-emerald-400 border border-emerald-500/20 mb-3">
+                    💎 PLANES A TU MEDIDA
+                </span>
+                <h2 class="text-3xl sm:text-4xl font-bold text-white mb-4">
+                    Inversión Transparente y Accesible
+                </h2>
+                <p class="text-slate-400">
+                    Haz clic en los montos si deseas cambiarlos o personalizarlos para tus clientes.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-3 gap-8 items-stretch">
+
+                <!-- Plan 1: Controla tu Negocio -->
+                <div class="p-8 bg-[#0b1320] rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-emerald-500 transition-all">
+                    <div>
+                        <span class="text-xs font-bold text-emerald-400 tracking-wider uppercase">Operacional</span>
+                        <h3 class="text-2xl font-bold text-white mt-1 mb-4">Controla tu Negocio</h3>
+                        <p class="text-xs text-slate-400 mb-6">Para empresas en marcha que buscan ordenar finanzas, ventas e inventario.</p>
+                        
+                        <div class="mb-6 flex items-baseline">
+                            <span class="text-sm font-bold text-slate-400 mr-1">S/</span>
+                            <span class="text-4xl font-extrabold text-white px-1">29</span>
+                            <span class="text-xs text-slate-400 ml-2">/ pago único</span>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                            <li class="flex items-center"><span class="text-emerald-400 mr-2">✓</span> Dashboard de Control Operativo</li>
+                            <li class="flex items-center"><span class="text-emerald-400 mr-2">✓</span> Registro de Inventario Automatizado</li>
+                            <li class="flex items-center"><span class="text-emerald-400 mr-2">✓</span> Flujo de ingresos y gastos</li>
+                            <li class="flex items-center"><span class="text-emerald-400 mr-2">✓</span> Registro de presupuestos</li>
+                            <li class="flex items-center"><span class="text-emerald-400 mr-2">✓</span> Centro IA (+50 Prompts)</li>
+                            <li class="flex items-center"><span class="text-emerald-400 mr-2">✓</span> Acceso a Grupo VIP de WhatsApp</li>    
+                        </ul>
+                    </div>
+
+                    <a href="https://wa.me/51913502048?text=Hola%20EGR,%20deseo%20adquirir%20el%20plan%20Controla%20tu%20Negocio." target="_blank" class="w-full py-3 rounded-xl font-bold text-center text-white bg-emerald-600 hover:bg-emerald-500 transition-all shadow-lg shadow-emerald-600/20">
+                        <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Adquirir Módulo
+                    </a>
+                </div>
+
+                <!-- Plan 2: Pack DUO Empresarial (COMBO HIGHLIGHTED) -->
+                <div class="p-8 bg-gradient-to-b from-[#112338] to-[#0b1320] rounded-2xl border-2 border-emerald-500 flex flex-col justify-between relative shadow-2xl glow-emerald">
+                    <span class="absolute -top-3 right-6 px-3 py-1 bg-emerald-500 text-slate-950 font-extrabold text-xs rounded-full uppercase tracking-wider">
+                        ⭐ Más Recomendado
+                    </span>
+                    <div>
+                        <span class="text-xs font-bold text-amber-400 tracking-wider uppercase">Combo Completo</span>
+                        <h3 class="text-2xl font-bold text-white mt-1 mb-4">Pack DUO Empresarial</h3>
+                        <p class="text-xs text-slate-300 mb-6">Controla tus operaciones y valida nuevos proyectos con el bundle definitivo.</p>
+                        
+                        <div class="mb-6 flex items-baseline">
+                            <span class="text-sm font-bold text-slate-400 mr-1">S/</span>
+                            <span class="text-5xl font-extrabold text-emerald-400 px-1">49</span>
+                            <span class="text-xs text-slate-400 ml-2">/ pago único</span>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-slate-200 mb-8">
+                            <li class="flex items-center"><span class="text-emerald-400 mr-2">✓</span> <strong>Módulo 'Controla tu Negocio' completo</strong></li>
+                            <li class="flex items-center"><span class="text-emerald-400 mr-2">✓</span> <strong>Módulo 'Valida tu Negocio' completo</strong></li>
+                            <li class="flex items-center"><span class="text-emerald-400 mr-2">✓</span> Biblioteca de Prompts de IA (70+)</li>
+                            <li class="flex items-center"><span class="text-emerald-400 mr-2">✓</span> Simulador de Punto de Equilibrio</li>
+                            <li class="flex items-center"><span class="text-emerald-400 mr-2">✓</span> Soporte VIP por WhatsApp</li>
+                        </ul>
+                    </div>
+
+                    <a href="https://wa.me/51913502048?text=Hola%20EGR,%20quiero%20aprovechar%20la%20oferta%20del%20Pack%20DUO%20Empresarial." target="_blank" class="w-full py-4 rounded-xl font-extrabold text-center text-slate-950 bg-emerald-400 hover:bg-emerald-300 transition-all shadow-xl shadow-emerald-400/20 text-base">
+                        <i class="fa-brands fa-whatsapp text-xl mr-2"></i> Adquirir Combo DUO
+                    </a>
+                </div>
+
+                <!-- Plan 3: Valida tu Negocio -->
+                <div class="p-8 bg-[#0b1320] rounded-2xl border border-slate-800 flex flex-col justify-between hover:border-blue-500 transition-all">
+                    <div>
+                        <span class="text-xs font-bold text-blue-400 tracking-wider uppercase">Estratégico</span>
+                        <h3 class="text-2xl font-bold text-white mt-1 mb-4">Valida tu Negocio</h3>
+                        <p class="text-xs text-slate-400 mb-6">Para emprendedores evaluando nuevas ideas o líneas de productos.</p>
+                        
+                        <div class="mb-6 flex items-baseline">
+                            <span class="text-sm font-bold text-slate-400 mr-1">S/</span>
+                            <span class="text-4xl font-extrabold text-white px-1">29</span>
+                            <span class="text-xs text-slate-400 ml-2">/ pago único</span>
+                        </div>
+
+                        <ul class="space-y-3 text-sm text-slate-300 mb-8">
+                            <li class="flex items-center"><span class="text-blue-400 mr-2">✓</span> Dashboard Principal (+10 KPI's)</li>
+                            <li class="flex items-center"><span class="text-blue-400 mr-2">✓</span> Simulador de Punto de Equilibrio</li>
+                            <li class="flex items-center"><span class="text-blue-400 mr-2">✓</span> Presupuesto de Inversión Inicial</li>
+                            <li class="flex items-center"><span class="text-blue-400 mr-2">✓</span> Proyección de ventas y costos</li>
+                            <li class="flex items-center"><span class="text-blue-400 mr-2">✓</span> AI Prompt Center (+20 Prompts)</li>
+                            <li class="flex items-center"><span class="text-blue-400 mr-2">✓</span> Scorecard de Viabilidad (puntaje)</li>
+                        </ul>
+                    </div>
+
+                    <a href="https://wa.me/51913502048?text=Hola%20EGR,%20deseo%20adquirir%20el%20plan%20Valida%20tu%20Negocio." target="_blank" class="w-full py-3 rounded-xl font-bold text-center text-white bg-blue-600 hover:bg-blue-500 transition-all shadow-lg shadow-blue-600/20">
+                        <i class="fa-brands fa-whatsapp text-lg mr-2"></i> Adquirir Módulo
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Corporate Branding -->
+    <footer class="bg-[#070c14] border-t border-slate-800 text-slate-400 py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center mb-8 border-b border-slate-800/80 pb-8">
+                <div class="flex items-center space-x-3 mb-4 md:mb-0">
+                    <div class="w-8 h-8 rounded-lg bg-emerald-500 flex items-center justify-center font-bold text-slate-950 text-sm">
+                        EGR
+                    </div>
+                    <span class="text-white font-extrabold tracking-wide">EGR Consultores Empresariales</span>
+                </div>
+                <div class="flex space-x-6 text-sm">
+                    <a href="https://wa.me/51913502048?text=Hola%20EGR,%20necesito%20asistencia." target="_blank" class="hover:text-emerald-400 transition-colors">Más información: +51 913 502 048</a>
+                </div>
+            </div>
+
+            <div class="text-center text-xs text-slate-500 space-y-2">
+                <p>Desarrollado por <strong>EGR Consultores Empresariales</strong>. Todos los derechos reservados.</p>
+                <p>Descargo de responsabilidad: Las herramientas financieras y simulaciones son de carácter orientativo para la toma de decisiones informadas.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle logic
+        const btn = document.getElementById('mobile-menu-btn');
+        const menu = document.getElementById('mobile-menu');
+
+        btn.addEventListener('click', () => {
+            menu.classList.toggle('hidden');
+        });
+    </script>
+
+</body></html>
